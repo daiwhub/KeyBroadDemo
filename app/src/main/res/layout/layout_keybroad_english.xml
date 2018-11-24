@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingTop="7dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="15dp">
+
+    <!-- 第一排数字 -->
+    <Button
+        android:id="@+id/layout_keybroad_english_1_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="1"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintBottom_toTopOf="@id/layout_keybroad_english_q_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_2_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_2_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="2"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_1_btn"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_1_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_3_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_1_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_3_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="3"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_1_btn"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_2_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_4_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_1_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_4_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="4"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_1_btn"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_3_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_5_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_1_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_5_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="5"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_1_btn"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_4_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_6_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_1_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_6_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="6"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_1_btn"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_5_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_7_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_1_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_7_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="7"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_1_btn"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_6_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_8_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_1_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_8_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_1_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="8"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_7_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_9_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_1_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_9_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_1_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="9"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_8_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_0_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_1_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_0_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_1_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="0"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_9_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_1_btn" />
+
+    <!-- 第一排字母 -->
+    <Button
+        android:id="@+id/layout_keybroad_english_q_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="q"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintBottom_toTopOf="@id/layout_keybroad_english_a_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_w_btn"
+        app:layout_constraintTop_toBottomOf="@id/layout_keybroad_english_1_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_w_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_q_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="w"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_q_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_e_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_q_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_e_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_q_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="e"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_w_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_r_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_q_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_r_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_q_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="r"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_e_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_t_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_q_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_t_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_q_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="t"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_r_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_y_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_q_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_y_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_q_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="y"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_t_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_u_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_q_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_u_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_q_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="u"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_y_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_i_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_q_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_i_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_q_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="i"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_u_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_o_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_q_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_o_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_q_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="o"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_i_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_p_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_q_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_p_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_q_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="p"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_o_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_q_btn" />
+
+
+    <!-- 第二排字母 -->
+    <Button
+        android:id="@+id/layout_keybroad_english_a_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="a"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintBottom_toTopOf="@id/layout_keybroad_english_change_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_s_btn"
+        app:layout_constraintTop_toBottomOf="@id/layout_keybroad_english_q_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_s_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_a_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="s"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_a_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_d_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_a_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_d_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_a_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="d"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_s_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_f_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_a_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_f_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_a_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="f"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_d_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_g_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_a_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_g_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_a_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="g"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_f_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_h_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_a_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_h_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_a_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="h"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_g_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_j_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_a_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_j_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_a_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="j"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_h_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_k_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_a_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_k_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_a_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="k"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_j_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_l_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_a_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_l_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_a_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="l"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_k_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_up_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_a_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_up_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_a_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:drawableTop="@mipmap/icon_capital_and_small_letter"
+        android:paddingTop="7dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_l_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_a_btn" />
+
+
+    <!-- 最后一排 -->
+    <Button
+        android:id="@+id/layout_keybroad_english_change_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="123"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_z_btn"
+        app:layout_constraintTop_toBottomOf="@id/layout_keybroad_english_a_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_z_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_change_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="z"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_change_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_x_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_change_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_x_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_change_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="x"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_z_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_c_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_change_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_c_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_change_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="c"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_x_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_v_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_change_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_v_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_change_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="v"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_c_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_b_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_change_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_b_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_change_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="b"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_v_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_n_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_change_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_n_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_change_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="n"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_b_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_m_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_change_btn" />
+
+
+    <Button
+        android:id="@+id/layout_keybroad_english_m_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_change_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:text="m"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_n_btn"
+        app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_delete_btn"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_change_btn" />
+
+    <Button
+        android:id="@+id/layout_keybroad_english_delete_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_change_btn"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_item_keybroad_sp"
+        android:drawableTop="@mipmap/icon_delete"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_m_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_change_btn" />
+
+
+</android.support.constraint.ConstraintLayout>
