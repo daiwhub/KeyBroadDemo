@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.view.View;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private EditText username_edt;
     private EditText password_edt;
+    private EditText password_edt_up;
     private Button login_btn;
     private FrameLayout keybraod_fl;
     /**
@@ -31,6 +33,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private TranslateAnimation mShowAction;
     private TranslateAnimation mCloseAction;
+    /**
+     *是否是输入姓名
+     */
+    private boolean isUserName = true;
+
+    private  FragmentKeyChange fragmentKeyChange;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,15 +54,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         username_edt.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus){
+                    if(fragmentKeyChange != null){
+                        fragmentKeyChange.resetTextView(((EditText)v).getText().toString().trim());
+                    }
+                }
+                isUserName = true;
                 //展示键盘
                 if(! isShowKeyBroad) {
                     showAnimation();
                 }
             }
         });
-        password_edt.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        password_edt_up.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus){
+                    fragmentKeyChange.resetTextView(((EditText)v).getText().toString().trim());
+                }
+                isUserName = false;
                 //展示键盘
                 if(! isShowKeyBroad) {
                     showAnimation();
@@ -63,36 +81,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
     }
 
-
     private void initView() {
         username_edt = (EditText) findViewById(R.id.username_edt);
-        password_edt = (EditText) findViewById(R.id.password_edt);
+        password_edt = (EditText) findViewById(R.id.password_edt_down);
+        password_edt_up = (EditText) findViewById(R.id.password_edt_up);
         login_btn = (Button) findViewById(R.id.login_btn);
         keybraod_fl = (FrameLayout) findViewById(R.id.keybraod_fl);
 
         username_edt.setInputType(InputType.TYPE_NULL); // 关闭软键盘
         password_edt.setInputType(InputType.TYPE_NULL); // 关闭软键盘
+        password_edt_up.setInputType(InputType.TYPE_NULL); // 关闭软键盘
 
         initKeyBroadView();
 
         login_btn.setOnClickListener(this);
     }
 
-     /*
-      * @Description : 隐藏系统软键盘
-      * @Params :
-      * @Author : daiw
-      * @Date : 2018/11/24
-      */
-    private void hideSystemKeyBroad(EditText edit){
-        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(edit.getWindowToken(),0);
-    }
-
     private void initKeyBroadView() {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        FragmentKeyChange fragmentKeyChange = new FragmentKeyChange();
+        fragmentKeyChange = new FragmentKeyChange();
         ft.add(R.id.keybraod_fl, fragmentKeyChange);
         ft.commit();
     }
@@ -108,6 +116,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //设置显示时的动画
         mShowAction = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 1.0f, Animation.RELATIVE_TO_SELF, 0.0f);
         mShowAction.setDuration(500);
+        keybraod_fl.startAnimation(mShowAction);
     }
 
     public void hideAnimation() {
@@ -136,6 +145,45 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             }
         });
+        keybraod_fl.startAnimation(mCloseAction);
+    }
+
+    public String addEditContent(String content){
+        String result = "";
+        if(isUserName){
+            addChar(username_edt,content);
+            result = username_edt.getText().toString().trim();
+        }else {
+            addChar(password_edt,content);
+            addChar(password_edt_up,"*");
+            result = password_edt_up.getText().toString().trim();
+        }
+        return result;
+    }
+
+    public String deleteEditContent(){
+        String result = "";
+        if(isUserName){
+            deleteChar(username_edt);
+            result = username_edt.getText().toString().trim();
+        }else {
+            deleteChar(password_edt);
+            deleteChar(password_edt_up);
+            result = password_edt_up.getText().toString().trim();
+        }
+        return result;
+    }
+
+    private void addChar(EditText editText, String data) {
+        int index = editText.getSelectionStart();
+        Editable editable = editText.getText();
+        editable.insert(index, data);
+    }
+
+    private void deleteChar(EditText editText) {
+        int index = editText.getSelectionStart();
+        Editable editable = editText.getText();
+        editable.delete(index - 1, index);
     }
 
     @Override
