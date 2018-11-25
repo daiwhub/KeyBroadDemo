@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -96,7 +97,7 @@ public class CustomKeyBroadEnglish extends ConstraintLayout implements View.OnCl
     private Button btn_j;
     private Button btn_k;
     private Button btn_l;
-    private Button btn_up;
+    private LinearLayout btn_up;
 
     private Button btn_123;
     private Button btn_z;
@@ -106,7 +107,7 @@ public class CustomKeyBroadEnglish extends ConstraintLayout implements View.OnCl
     private Button btn_b;
     private Button btn_n;
     private Button btn_m;
-    private Button btn_delete;
+    private LinearLayout btn_delete;
 
     /**
      * 大小写标识:true小写flase大写

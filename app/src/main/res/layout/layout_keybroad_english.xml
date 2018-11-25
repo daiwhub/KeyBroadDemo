@@ -509,24 +509,30 @@
         app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_a_btn" />
 
 
-    <Button
+    <LinearLayout
         android:id="@+id/layout_keybroad_english_up_btn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_a_btn"
         android:layout_marginLeft="5dp"
         android:background="@drawable/bg_item_keybroad_sp"
-        android:drawableTop="@mipmap/icon_capital_and_small_letter"
-        android:paddingTop="7dp"
         android:text=""
         android:textAllCaps="false"
         android:textColor="@color/blue"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:gravity="center"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_l_btn"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_a_btn" />
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_a_btn" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_capital_and_small_letter"/>
+
+    </LinearLayout>
 
 
     <!-- 最后一排 -->
@@ -673,16 +679,14 @@
         app:layout_constraintRight_toLeftOf="@id/layout_keybroad_english_delete_btn"
         app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_change_btn" />
 
-    <Button
+    <LinearLayout
         android:id="@+id/layout_keybroad_english_delete_btn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@id/layout_keybroad_english_change_btn"
         android:layout_marginLeft="5dp"
         android:background="@drawable/bg_item_keybroad_sp"
-        android:drawableTop="@mipmap/icon_delete"
         android:gravity="center"
-        android:paddingTop="8dp"
         android:text=""
         android:textAllCaps="false"
         android:textColor="@color/blue"
@@ -691,7 +695,14 @@
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintLeft_toRightOf="@id/layout_keybroad_english_m_btn"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_change_btn" />
+        app:layout_constraintTop_toTopOf="@id/layout_keybroad_english_change_btn" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_delete"/>
+
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>

@@ -52,7 +52,7 @@ public class CustomKeyBroadNumber extends ConstraintLayout implements View.OnCli
     private Button btn_9;
     private Button btn_0;
     private ItemKeyBroadChange btn_change;
-    private Button btn_delete;
+    private LinearLayout btn_delete;
 
     private OnClickListener onClickListener;
 
